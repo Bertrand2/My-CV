@@ -1,0 +1,148 @@
+/*===================================
+FONTS & COLORS
+===================================*/
+
+@font-face {
+    font-family: 'Trajan_Pro_Regular';
+    src: url('fonts/Trajan_Pro_Regular.eot');
+    src: url('fonts/Trajan_Pro_Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Trajan_Pro_Regular.woff2') format('woff2'),
+         url('fonts/Trajan_Pro_Regular.woff') format('woff'),
+         url('fonts/Trajan_Pro_Regular.ttf') format('truetype'),
+         url('fonts/Trajan_Pro_Regular.svg#Trajan_Pro_Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --color-bg: #DAEFB3;
+    --color-main: #EEF4D4;
+    --color-text: #161314;
+}
+
+/*===================================
+GENERAL
+===================================*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: var(--color-text);
+    font-family: arial;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    background-color: var(--color-bg);
+}
+
+.mainPage{
+    grid-column: 2;
+    box-shadow: 3px 0px 6px grey , -3px 0px 6px grey;
+    background-color: var(--color-main);
+}
+
+h1{
+    margin-left: 5%;
+    margin-top: 35px;
+    font-size: 1.5em;
+    font-family: "Trajan_Pro_Regular";
+    font-weight: bolder;
+}
+
+h2{
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-family: "Trajan_Pro_Regular";
+}
+
+ul{
+    margin-left: 8%;
+    margin-bottom: 25px;
+}
+
+li{
+    margin-bottom: 3px;
+}
+
+/*===================================
+RESUME
+===================================*/
+
+.resume{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+}
+
+.photo{
+    grid-column: 1;
+    margin: 10%;
+}
+
+.photo img{
+    border-radius: 50%;
+    transition: border-radius 0.6s;
+}
+
+img:hover{
+    border-radius: 25%;
+}
+
+.sideText{
+    margin-left: 5%;
+    grid-column: 2;
+}
+
+.sideText ul{
+    list-style: none;
+}
+
+li img{
+    height: 1em;
+}
+
+/*===================================
+EXPERIENCE
+===================================*/
+
+.experience ul{
+    list-style: none;
+}
+
+.experience li img{
+    height: 0.5em;
+}
+
+hr{
+	size:2px;
+	color: var(--color-bg);
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*===================================
+FOOTER
+===================================*/
+
+footer{
+    grid-row-start: 2;
+    grid-column: 2;
+    background-color: var(--color-text);
+    box-shadow: 3px 0px 6px grey , -3px 0px 6px grey;
+}
+
+footer p{
+    margin: 15px;
+    color: var(--color-main);
+}
+
+footer p a{
+    color: var(--color-bg);
+    text-decoration: underline;
+}
