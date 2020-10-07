@@ -74,12 +74,14 @@ RESUME
 
 .resume{
     display: grid;
-    grid-template-columns: 2fr 6fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .photo{
     grid-column: 1;
     margin: 10%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .photo img{
@@ -93,6 +95,7 @@ img:hover{
 
 .sideText{
     margin-left: 5%;
+    margin-top: 10%;
     grid-column: 2;
 }
 
